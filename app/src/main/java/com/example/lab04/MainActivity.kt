@@ -51,6 +51,19 @@ fun LazyColumnEjem() {
 
 }
 
+@Composable
+fun LazyRowEjem() {
+    LazyRow (
+        modifier = Modifier.fillMaxSize(),
+        contentPadding = PaddingValues(16.dp),
+        horizontalArrangement = Arrangement.spacedBy(8.dp)
+    ) {
+        items( 10){ index ->
+            Text(text = "Item $index")
+
+        }
+    }
+}
 
 
 @Preview(showBackground = true)
@@ -61,3 +74,10 @@ fun GreetingPreview() {
     }
 }
 
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview2() {
+    Lab04Theme {
+        LazyRowEjem()
+    }
+}
