@@ -23,6 +23,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.lab04.ui.theme.Lab04Theme
 
 class MainActivity : ComponentActivity() {
@@ -83,10 +84,15 @@ fun GridEjem(){
         items(10){ index ->
             Box(
                 modifier = Modifier
-                    .background(Color.Cyan)
-                    .padding(14.dp)
+                    .background(Color.Magenta)
+                    .padding(16.dp)
             ){
-                Text(text = "Item $index")
+                Text(
+                    text = "Item $index",
+                    fontSize = 18.sp,
+                    color = Color.White
+                    )
+
             }
 
         }
