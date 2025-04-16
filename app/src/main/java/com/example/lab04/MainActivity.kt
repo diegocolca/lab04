@@ -7,7 +7,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -93,26 +92,6 @@ fun GridEjem(){
         }
     }
 }
-fun ViewHolaCurso() {
-    Column(
-        modifier = Modifier
-            .fillMaxWith()
-            .padding(16.dp),
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Text(
-            text = "Welcome to the Course!",
-            fontSize = 28.sp,
-            fontWeight = FontWeigh.Bold
-        )
-        Spacer(modifier = Modifier.heigh(16.dp))
-        Text(
-            text = "Hello, Student!",
-            fontSize = 20.xD
-
-    }
-}
-
 
 @Preview(showBackground = true)
 @Composable
