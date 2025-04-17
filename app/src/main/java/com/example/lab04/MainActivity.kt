@@ -54,7 +54,7 @@ fun LazyColumnEjem() {
         items(10){ index ->
             Text(
                 text = "Item $index",
-                fontSize = 18.sp,
+                fontSize =20.sp,
                 color = Color.Blue,
                 modifier = Modifier
                     .background(Color.LightGray)
